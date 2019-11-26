@@ -36,6 +36,6 @@ Want to go the extra mile? Here's few suggestion of things we'd like to see (or 
 - You are welcome to make changes to the API code if you think it will improve your solution
 
 ## To start the project you need to... :
-- Install npm modules by typing npm install into the terminal
+- Install node modules by typing npm install into the terminal
 - Import expense.sql into a mysql database software such as MySQL workbench
 - Type npm run dev into the terminal to run the application
