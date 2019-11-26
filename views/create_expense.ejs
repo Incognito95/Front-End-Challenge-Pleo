@@ -1,0 +1,49 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <h3>Create Expense</h3>
+    <span style="color: green;"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+    <form method="POST" action="/create">
+        <fieldset>
+            <label for="">Value</label>
+            <input type="text" name="value" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Currency</label>
+            <input type="text" name="currency" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Date</label>
+            <input type="text" name="date" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Merchant</label>
+            <input type="text" name="merchant" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Receipts</label>
+            <input type="text" name="receipts" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Comment</label>
+            <input type="text" name="comment" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Category</label>
+            <input type="text" name="category" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">First</label>
+            <input type="text" name="first" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Last</label>
+            <input type="text" name="last" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Email</label>
+            <input type="text" name="email" class="form-control">
+        </fieldset>
+        <button type="submit" class="btn btn-primary btn-save">Save</button>
+    </form>
+</div>

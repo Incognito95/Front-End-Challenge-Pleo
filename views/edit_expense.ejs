@@ -1,0 +1,48 @@
+<% include ./partials/header %>
+
+<div class="container">
+        <h3>Edit: <%= result.first %> <%= result.last %></h3>
+        <form method="POST">
+            <fieldset>
+                <label for="">Value</label>
+                <input type="text" name="value" class="form-control" value="<%= result.value %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Currency</label>
+                <input type="text" name="currency" class="form-control" value="<%= result.currency %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Date</label>
+                <input type="text" name="date" class="form-control" value="<%= result.date %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Merchant</label>
+                <input type="text" name="merchant" class="form-control" value="<%= result.merchant %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Receipts</label>
+                <input type="text" name="receipts" class="form-control" value="<%= result.receipts %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Comment</label>
+                <input type="text" name="comment" class="form-control" value="<%= result.comment %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Category</label>
+                <input type="text" name="category" class="form-control" value="<%= result.category %>">
+            </fieldset>
+            <fieldset>
+                <label for="">First</label>
+                <input type="text" name="first" class="form-control" value="<%= result.first %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Last</label>
+                <input type="text" name="last" class="form-control" value="<%= result.last %>">
+            </fieldset>
+            <fieldset>
+                <label for="">Email</label>
+                <input type="text" name="email" class="form-control" value="<%= result.email %>">
+            </fieldset>
+            <button type="submit" class="btn btn-primary btn-save">Save</button>
+        </form>
+    </div>

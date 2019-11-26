@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+
+<div class="container">
+    <h3>Images</h3>
+    <span style="color: green; margin: 20px;"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Actions</th>
+                <th scope="col">Image Preview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% images.forEach(image => { %>
+            <tr>
+                <td class="table-striped"><%= image.id %></td>
+                <td><%= image.name %></td>
+                <td>
+                    <a href="/billeder/<%= image.name %>" class="btn btn-info">Edit</a>
+                    <a href="/billeder/<%= image.name %>?action=delete" class="btn btn-danger">Delete</a>
+                </td>
+                <td><img src="/billeder/<%= image.name %>" width="80"></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
