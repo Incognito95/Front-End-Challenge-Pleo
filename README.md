@@ -34,3 +34,8 @@ Want to go the extra mile? Here's few suggestion of things we'd like to see (or 
 ## A few last things 👇
  - Please note that while you are free to use libraries of your choosing, we encourage you to write at least some your own code. This is your chance to really impress us with your skills.
 - You are welcome to make changes to the API code if you think it will improve your solution
+
+## To start the project you need to... :
+- install npm modules by typing npm install into the terminal
+- import expense.sql into a mysql database software such as MySQL workbench
+- type npm run dev into the terminal to run the application
